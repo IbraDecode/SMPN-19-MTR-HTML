@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Kegiatan - SMPN 19 Mataram</title>
+    <meta name="description" content="Galeri foto dan dokumentasi kegiatan SMPN 19 Mataram - Prestasi, pembelajaran, dan aktivitas siswa">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/smpn19-logo.jpg">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/smpn19-logo.jpg" alt="Logo SMPN 19" height="45" class="me-2 logo-img">
+                <div class="brand-text">
+                    <span class="fw-bold text-primary fs-5">SMPN 19 Mataram</span>
+                    <small class="d-block text-muted">Sekolah Unggul Berkarakter</small>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profil.html">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="berita.html">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galeri.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kalender.html">Kalender</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-gradient-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-3">Galeri Kegiatan</h1>
+                    <p class="lead mb-0">Dokumentasi visual kegiatan, prestasi, dan momen berharga di SMPN 19 Mataram</p>
+                </div>
+                <div class="col-lg-4 text-center" data-aos="fade-left">
+                    <i class="fas fa-images display-1 text-white opacity-75"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="gallery-filter text-center" data-aos="fade-up">
+                        <button class="btn btn-outline-primary active me-2 mb-2" data-filter="all">Semua</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter="pembelajaran">Pembelajaran</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter="ekstrakurikuler">Ekstrakurikuler</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter="prestasi">Prestasi</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter="fasilitas">Fasilitas</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter="kegiatan">Kegiatan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row gallery-grid" id="galleryGrid">
+                <!-- Gallery Item 1 -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="pembelajaran" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gallery-card">
+                        <img src="assets/images/galeri/IMG-20250618-WA0008.jpg" alt="Kegiatan Pembelajaran" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Kegiatan Pembelajaran</h5>
+                                <p>Suasana belajar yang kondusif dan interaktif di ruang kelas</p>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="assets/images/galeri/IMG-20250618-WA0008.jpg" data-title="Kegiatan Pembelajaran" data-description="Suasana belajar yang kondusif dan interaktif di ruang kelas SMPN 19 Mataram">
+                                    <i class="fas fa-search-plus"></i> Lihat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="ekstrakurikuler" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-card">
+                        <img src="assets/images/galeri/IMG-20250618-WA0009.jpg" alt="Kegiatan Ekstrakurikuler" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Ekstrakurikuler</h5>
+                                <p>Pengembangan bakat dan minat siswa melalui berbagai kegiatan</p>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="assets/images/galeri/IMG-20250618-WA0009.jpg" data-title="Kegiatan Ekstrakurikuler" data-description="Pengembangan bakat dan minat siswa melalui berbagai kegiatan ekstrakurikuler">
+                                    <i class="fas fa-search-plus"></i> Lihat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="prestasi" data-aos="fade-up" data-aos-delay="300">
+                    <div class="gallery-card">
+                        <img src="assets/images/galeri/IMG-20250618-WA0010.jpg" alt="Prestasi Siswa" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Prestasi Siswa</h5>
+                                <p>Pencapaian membanggakan di berbagai bidang kompetisi</p>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="assets/images/galeri/IMG-20250618-WA0010.jpg" data-title="Prestasi Siswa" data-description="Pencapaian membanggakan siswa SMPN 19 di berbagai bidang kompetisi">
+                                    <i class="fas fa-search-plus"></i> Lihat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="fasilitas" data-aos="fade-up" data-aos-delay="400">
+                    <div class="gallery-card">
+                        <img src="assets/images/galeri/IMG-20250618-WA0012.jpg" alt="Fasilitas Sekolah" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Fasilitas Sekolah</h5>
+                                <p>Sarana dan prasarana pembelajaran yang modern dan lengkap</p>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="assets/images/galeri/IMG-20250618-WA0012.jpg" data-title="Fasilitas Sekolah" data-description="Sarana dan prasarana pembelajaran yang modern dan lengkap di SMPN 19">
+                                    <i class="fas fa-search-plus"></i> Lihat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="ekstrakurikuler" data-aos="fade-up" data-aos-delay="500">
+                    <div class="gallery-card">
+                        <img src="assets/images/galeri/IMG-20250618-WA0013.jpg" alt="Kegiatan Olahraga" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Kegiatan Olahraga</h5>
+                                <p>Pembinaan kesehatan dan kebugaran siswa melalui olahraga</p>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="assets/images/galeri/IMG-20250618-WA0013.jpg" data-title="Kegiatan Olahraga" data-description="Pembinaan kesehatan dan kebugaran siswa melalui berbagai kegiatan olahraga">
+                                    <i class="fas fa-search-plus"></i> Lihat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="kegiatan" data-aos="fade-up" data-aos-delay="600">
+                    <div class="gallery-card">
+                        <img src="assets/images/galeri/IMG-20250618-WA0014.jpg" alt="Kegiatan Seni" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Kegiatan Seni</h5>
+                                <p>Pengembangan kreativitas dan seni budaya siswa</p>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="assets/images/galeri/IMG-20250618-WA0014.jpg" data-title="Kegiatan Seni" data-description="Pengembangan kreativitas dan seni budaya siswa SMPN 19 Mataram">
+                                    <i class="fas fa-search-plus"></i> Lihat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="pembelajaran" data-aos="fade-up" data-aos-delay="700">
+                    <div class="gallery-card">
+                        <img src="assets/images/galeri/IMG-20250618-WA0017.jpg" alt="Laboratorium" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Kegiatan Laboratorium</h5>
+                                <p>Praktikum dan eksperimen di laboratorium sekolah</p>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="assets/images/galeri/IMG-20250618-WA0017.jpg" data-title="Kegiatan Laboratorium" data-description="Praktikum dan eksperimen di laboratorium SMPN 19 Mataram">
+                                    <i class="fas fa-search-plus"></i> Lihat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="kegiatan" data-aos="fade-up" data-aos-delay="800">
+                    <div class="gallery-card">
+                        <img src="assets/images/galeri/IMG-20250618-WA0019.jpg" alt="Kegiatan Sekolah" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Kegiatan Sekolah</h5>
+                                <p>Berbagai kegiatan dan acara yang diselenggarakan sekolah</p>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="assets/images/galeri/IMG-20250618-WA0019.jpg" data-title="Kegiatan Sekolah" data-description="Berbagai kegiatan dan acara yang diselenggarakan SMPN 19 Mataram">
+                                    <i class="fas fa-search-plus"></i> Lihat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 9 -->
+                <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="prestasi" data-aos="fade-up" data-aos-delay="900">
+                    <div class="gallery-card">
+                        <img src="assets/images/berita/IMG-20250618-WA0011.jpg" alt="Prestasi Olimpiade" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h5>Prestasi Olimpiade</h5>
+                                <p>Juara Olimpiade Matematika tingkat Provinsi NTB</p>
+                                <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="assets/images/berita/IMG-20250618-WA0011.jpg" data-title="Prestasi Olimpiade" data-description="Juara Olimpiade Matematika tingkat Provinsi NTB">
+                                    <i class="fas fa-search-plus"></i> Lihat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-5" data-aos="fade-up">
+                <button class="btn btn-primary btn-lg" id="loadMoreBtn">
+                    <i class="fas fa-plus me-2"></i>Muat Lebih Banyak
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Stats -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-images text-primary"></i>
+                        </div>
+                        <h3 class="stat-number" data-count="150">0</h3>
+                        <p class="stat-label">Total Foto</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-check text-success"></i>
+                        </div>
+                        <h3 class="stat-number" data-count="25">0</h3>
+                        <p class="stat-label">Kegiatan Terdokumentasi</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy text-warning"></i>
+                        </div>
+                        <h3 class="stat-number" data-count="12">0</h3>
+                        <p class="stat-label">Prestasi Terekam</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-eye text-info"></i>
+                        </div>
+                        <h3 class="stat-number" data-count="5000">0</h3>
+                        <p class="stat-label">Total Views</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalLabel">Galeri SMPN 19 Mataram</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Gallery Image" class="img-fluid mb-3">
+                    <h6 id="modalTitle"></h6>
+                    <p id="modalDescription" class="text-muted"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary" id="downloadBtn">
+                        <i class="fas fa-download me-2"></i>Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="assets/images/smpn19-logo.jpg" alt="Logo SMPN 19" height="60" class="mb-3">
+                        <h5>SMPN 19 Mataram</h5>
+                        <p class="text-muted">Membangun generasi unggul dengan pendidikan berkualitas, karakter yang kuat, dan prestasi yang membanggakan.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Menu Utama</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="berita.html">Berita</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Informasi</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="kalender.html">Kalender</a></li>
+                        <li><a href="#ppdb">PPDB 2025</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                        <li><a href="#fasilitas">Fasilitas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h6>Kontak Kami</h6>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt me-2"></i>Jl. Dr. Soedjono, Dasan Cermen, Sandubaya, Mataram, NTB</p>
+                        <p><i class="fas fa-phone me-2"></i>(0370) 123456</p>
+                        <p><i class="fas fa-envelope me-2"></i>smpn19mataram@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 SMPN 19 Mataram. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Dibuat dengan <i class="fas fa-heart text-danger"></i> untuk pendidikan Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery.js"></script>
+</body>
+</html>
+
