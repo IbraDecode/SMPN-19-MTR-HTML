@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "name": "smpn19-mataram",
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "assets/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/profil",
+      "dest": "/profil.html"
+    },
+    {
+      "src": "/berita",
+      "dest": "/berita.html"
+    },
+    {
+      "src": "/galeri",
+      "dest": "/galeri.html"
+    },
+    {
+      "src": "/kontak",
+      "dest": "/kontak.html"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    }
+  ]
+}
+
